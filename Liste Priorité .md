@@ -30,5 +30,27 @@ Moyenne  : Réaliser les tests du programme
 
 Basse    : Faciliter la modification des styles et couleurs
 
-Basse    : Permettre l'ajout de nouveaux styles.
+Basse    : Permettre l'ajout de nouveaux styles
+
+
+
+
+
+Tâche du Sprint                        :  Plan                                             
+
+\------------------------------------------------------------------------------------- 
+
+Comprendre Mistletoe                   : Lire la documentation et regarder des exemples   
+
+Installer/configurer Mistletoe         : Préparer l'environnement Python                  
+
+Tester un fichier Markdown simple      : Créer un petit `.md` de test                     
+
+Convertir Markdown → HTML              : Faire fonctionner Mistletoe                      
+
+Observer le HTML produit               : Identifier où intervenir avec le post-processeur 
+
+Faire un premier test de modification  : Modifier un élément simple du HTML avec Python   
+
+
 
