@@ -30,5 +30,5 @@ Moyenne  : Réaliser les tests du programme
 
 Basse    : Faciliter la modification des styles et couleurs
 
-Basse    : Permettre l'ajout de nouveaux styles
+Basse    : Permettre l'ajout de nouveaux styles.
 
