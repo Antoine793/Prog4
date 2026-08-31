@@ -1,7 +1,9 @@
-# Mon premier titre
+# Test des couleurs
 
-Bonjour, ceci est mon premier test.
+Voici un texte normal.
 
-## Deuxième titre
+Voici {{red|un texte rouge}} dans une phrase.
 
-Voici un autre paragraphe.
+Voici {{blue|un texte bleu}}.
+
+Voici {{=yellow|un texte surligné en jaune}}.
