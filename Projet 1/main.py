@@ -3,13 +3,24 @@ import mistletoe
 
 with open("test.md", "r", encoding="utf-8") as fichier:
     html = mistletoe.markdown(fichier)
-    
+
 def ajouter_couleur(match):
     couleur = match.group(1)
     texte = match.group(2)
 
     return f'<span style="color: {couleur};">{texte}</span>'
 
+def ajouter_surlignage(match):
+    couleur = match.group(1)
+    texte = match.group(2)
+
+    return f'<span style="background-color: {couleur};">{texte}</span>'
+
+html = re.sub(
+    r"\{\{=([a-zA-Z]+)\|(.+?)\}\}",
+    ajouter_surlignage,
+    html
+)
 
 html = re.sub(
     r"\{\{([a-zA-Z]+)\|(.+?)\}\}",
