@@ -1,35 +1,91 @@
-# Test de mon post-processeur
+# TEST COMPLET DU PROGRAMME
 
-## Texte normal
+Ceci est un texte normal sans couleur.
 
-Ceci est du texte normal sans modification.
 
-## Couleur du texte
+## 1. Test des couleurs simples
 
-Voici {{red|un texte rouge}}.
+{{red|Texte rouge}}
 
-Voici {{blue|un texte bleu}}.
+{{blue|Texte bleu}}
 
-Voici {{green|un texte vert}}.
+{{green|Texte vert}}
 
-Voici {{#8A2BE2|un texte mauve avec un code hexadécimal}}.
+{{purple|Texte mauve}}
 
-## Surlignage
 
-Voici {{=yellow|un texte surligné en jaune}}.
+## 2. Test du surlignage
 
-Voici {{=lightblue|un texte surligné en bleu pâle}}.
+{{=yellow|Texte surligné en jaune}}
 
-Voici {{=#FFB6C1|un surlignage rose avec un code hexadécimal}}.
+{{=lightblue|Texte surligné en bleu pâle}}
 
-## Couleur et surlignage
 
-Voici {{red,=yellow|un texte rouge surligné en jaune}}.
+## 3. Test couleur + surlignage
 
-Voici {{white,=black|un texte blanc sur fond noir}}.
+{{yellow,=red|Texte jaune sur fond rouge}}
 
-Voici {{#0000FF,=#FFFF00|un texte bleu sur fond jaune}}.
+{{white,=black|Texte blanc sur fond noir}}
 
-## Plusieurs styles dans une phrase
 
-Voici {{red|du rouge}}, ensuite du texte normal et enfin {{blue|du bleu}}.
+## 4. Test de la correction des sauts de ligne
+
+{{red|Première ligne rouge}}
+{{blue|Deuxième ligne bleue}}
+{{green|Troisième ligne verte}}
+
+Les trois textes ci-dessus doivent apparaître sur trois lignes différentes.
+
+
+## 5. Test avec du texte en gras
+
+{{yellow,=red|Texte normal}}
+{{yellow,=red|**Mais cette ligne est en gras**}}
+
+Les deux textes doivent apparaître sur deux lignes différentes et le deuxième doit être en gras.
+
+
+## 6. Test des titres colorés
+
+{{red|# Titre H1 rouge}}
+
+{{blue|## Titre H2 bleu}}
+
+{{green|### Titre H3 vert}}
+
+{{purple|#### Titre H4 mauve}}
+
+
+## 7. Test des titres avec surlignage
+
+{{=yellow|# Titre H1 surligné en jaune}}
+
+{{=lightblue|## Titre H2 surligné en bleu pâle}}
+
+
+## 8. Test des titres avec couleur + surlignage
+
+{{white,=black|# Titre H1 blanc sur fond noir}}
+
+{{yellow,=red|## Titre H2 jaune sur fond rouge}}
+
+
+## 9. Test de l'autre syntaxe pour les titres
+
+# {{red|Titre rouge}}
+
+## {{blue|Titre bleu}}
+
+### {{green|Titre vert}}
+
+
+## 10. Test final
+
+Texte normal.
+
+{{red|Texte rouge}}
+{{blue|**Texte bleu et gras**}}
+
+{{yellow,=black|# Titre jaune sur fond noir}}
+
+Fin du test.

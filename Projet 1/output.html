@@ -8,24 +8,49 @@
 
 <body>
 
-<h1>Test de mon post-processeur</h1>
-<h2>Texte normal</h2>
-<p>Ceci est du texte normal sans modification.</p>
-<h2>Couleur du texte</h2>
-<p>Voici <span style="color: red; ">un texte rouge</span>.</p>
-<p>Voici <span style="color: blue; ">un texte bleu</span>.</p>
-<p>Voici <span style="color: green; ">un texte vert</span>.</p>
-<p>Voici <span style="color: #8A2BE2; ">un texte mauve avec un code hexadécimal</span>.</p>
-<h2>Surlignage</h2>
-<p>Voici <span style="background-color: yellow; ">un texte surligné en jaune</span>.</p>
-<p>Voici <span style="background-color: lightblue; ">un texte surligné en bleu pâle</span>.</p>
-<p>Voici <span style="background-color: #FFB6C1; ">un surlignage rose avec un code hexadécimal</span>.</p>
-<h2>Couleur et surlignage</h2>
-<p>Voici <span style="color: red; background-color: yellow; ">un texte rouge surligné en jaune</span>.</p>
-<p>Voici <span style="color: white; background-color: black; ">un texte blanc sur fond noir</span>.</p>
-<p>Voici <span style="color: #0000FF; background-color: #FFFF00; ">un texte bleu sur fond jaune</span>.</p>
-<h2>Plusieurs styles dans une phrase</h2>
-<p>Voici <span style="color: red; ">du rouge</span>, ensuite du texte normal et enfin <span style="color: blue; ">du bleu</span>.</p>
+<h1>TEST COMPLET DU PROGRAMME</h1>
+<p>Ceci est un texte normal sans couleur.</p>
+<h2>1. Test des couleurs simples</h2>
+<p><span style="color: red; ">Texte rouge</span></p>
+<p><span style="color: blue; ">Texte bleu</span></p>
+<p><span style="color: green; ">Texte vert</span></p>
+<p><span style="color: purple; ">Texte mauve</span></p>
+<h2>2. Test du surlignage</h2>
+<p><span style="background-color: yellow; ">Texte surligné en jaune</span></p>
+<p><span style="background-color: lightblue; ">Texte surligné en bleu pâle</span></p>
+<h2>3. Test couleur + surlignage</h2>
+<p><span style="color: yellow; background-color: red; ">Texte jaune sur fond rouge</span></p>
+<p><span style="color: white; background-color: black; ">Texte blanc sur fond noir</span></p>
+<h2>4. Test de la correction des sauts de ligne</h2>
+<p><span style="color: red; ">Première ligne rouge</span><br />
+<span style="color: blue; ">Deuxième ligne bleue</span><br />
+<span style="color: green; ">Troisième ligne verte</span></p>
+<p>Les trois textes ci-dessus doivent apparaître sur trois lignes différentes.</p>
+<h2>5. Test avec du texte en gras</h2>
+<p><span style="color: yellow; background-color: red; ">Texte normal</span><br />
+<span style="color: yellow; background-color: red; "><strong>Mais cette ligne est en gras</strong></span></p>
+<p>Les deux textes doivent apparaître sur deux lignes différentes et le deuxième doit être en gras.</p>
+<h2>6. Test des titres colorés</h2>
+<h1><span style="color: red; ">Titre H1 rouge</span></h1>
+<h2><span style="color: blue; ">Titre H2 bleu</span></h2>
+<h3><span style="color: green; ">Titre H3 vert</span></h3>
+<h4><span style="color: purple; ">Titre H4 mauve</span></h4>
+<h2>7. Test des titres avec surlignage</h2>
+<h1><span style="background-color: yellow; ">Titre H1 surligné en jaune</span></h1>
+<h2><span style="background-color: lightblue; ">Titre H2 surligné en bleu pâle</span></h2>
+<h2>8. Test des titres avec couleur + surlignage</h2>
+<h1><span style="color: white; background-color: black; ">Titre H1 blanc sur fond noir</span></h1>
+<h2><span style="color: yellow; background-color: red; ">Titre H2 jaune sur fond rouge</span></h2>
+<h2>9. Test de l'autre syntaxe pour les titres</h2>
+<h1><span style="color: red; ">Titre rouge</span></h1>
+<h2><span style="color: blue; ">Titre bleu</span></h2>
+<h3><span style="color: green; ">Titre vert</span></h3>
+<h2>10. Test final</h2>
+<p>Texte normal.</p>
+<p><span style="color: red; ">Texte rouge</span><br />
+<span style="color: blue; "><strong>Texte bleu et gras</strong></span></p>
+<h1><span style="color: yellow; background-color: black; ">Titre jaune sur fond noir</span></h1>
+<p>Fin du test.</p>
 
 
 </body>
